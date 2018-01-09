@@ -83,7 +83,8 @@ public class ContentsViewer {
 
     public TextChunk getChunkFromSublist(String name, TextChunk chunk)  throws IllegalArgumentException
     {
-        if(chunk.getSublist()!=null)
+
+        if(chunk!=null && chunk.getSublist()!=null)
         {
             for(TextChunk element:chunk.getSublist())
             {
